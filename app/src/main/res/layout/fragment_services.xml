@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.admin.quickscan.fragments.ServicesFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout_feedbackdialog -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:text="QR Code"
+        android:id="@+id/btn_qrCode"
+        android:elevation="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvOr"
+        android:layout_below="@+id/btn_qrCode"
+        android:textSize="45sp"
+        android:text="OR"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="75dp"
+
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_manually"
+        android:layout_below="@+id/tvOr"
+        android:layout_marginTop="80dp"
+        android:text="Enter Manually"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:onClick="Services"/>
+
+    </RelativeLayout>
+</FrameLayout>

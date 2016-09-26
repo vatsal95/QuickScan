@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ivbill_product"
+                android:src="@drawable/dash1"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name:"
+                android:layout_toRightOf="@+id/ivbill_product"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/tvbill_pro_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pizza"
+                android:layout_toRightOf="@+id/tvbill_pro_name"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/tvbill_pro_item"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Order:"
+                android:layout_below="@+id/tvbill_pro_name"
+                android:layout_toRightOf="@+id/ivbill_product"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/tvbill_pro_date"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07/05/1995"
+                android:layout_below="@+id/tvbill_pro_item"
+                android:layout_toRightOf="@+id/tvbill_pro_date"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/tvbill_pro_item_date"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:layout_toRightOf="@+id/ivbill_product"
+                android:layout_below="@+id/tvbill_pro_date"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/tvbill_pro_qty"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:layout_toRightOf="@+id/tvbill_pro_qty"
+                android:layout_below="@+id/tvbill_pro_item_date"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/tvbill_pro_item_qty"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:layout_toRightOf="@+id/ivbill_product"
+                android:layout_below="@+id/tvbill_pro_qty"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/tvbill_pro_price"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:layout_toRightOf="@+id/tvbill_pro_price"
+                android:layout_below="@+id/tvbill_pro_item_qty"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/tvbill_pro_item_price"/>
+
+
+
+</LinearLayout>

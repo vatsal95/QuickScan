@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+
+    >
+
+    <TextView
+        android:id="@+id/txtViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Things To Do!"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+    <ImageView
+        android:id="@+id/imgView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtViewTitle"
+        android:contentDescription="Resort Information"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dash1" />
+
+    <TextView
+        android:id="@+id/imgtext1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgView1"
+        android:text="Resort Information"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtViewTitle"
+        android:layout_toRightOf="@+id/imgView1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dash2" />
+
+    <TextView
+        android:id="@+id/imgtext2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgView2"
+        android:layout_toRightOf="@+id/imgtext1"
+        android:text="Daily Schedule"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imgtext1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dash3" />
+
+    <TextView
+        android:id="@+id/imgtext3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgView3"
+        android:text="Local Attraction"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imgtext2"
+        android:layout_toRightOf="@+id/imgView3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dash1" />
+
+    <TextView
+        android:id="@+id/imgtext4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgView4"
+        android:layout_toRightOf="@+id/imgtext3"
+        android:text="World Class Spa"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.quickscan.fragments.FeedbackFragment">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:orientation="vertical"
+            android:layout_height="400dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post a FeedBack"
+                android:id="@+id/tvFdName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="35sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#80975d"/>
+
+
+
+            <Spinner
+                android:id="@+id/SpinnerFeedbackType"
+                android:layout_height="wrap_content"
+
+                android:layout_width="match_parent"
+                android:entries="@array/feedbacktypelist">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/EditTextFeedbackBody"
+                android:layout_height="wrap_content"
+                android:hint="What Do You Think About Us...?"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:layout_width="match_parent">
+            </EditText>
+
+            <Button
+                android:id="@+id/ButtonSendFeedback"
+                android:layout_height="wrap_content"
+                android:text="Submit FeedBack"
+                android:onClick="sendFeedback"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/accent_material_light"
+
+                android:textColor="#ffffff">
+            </Button>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

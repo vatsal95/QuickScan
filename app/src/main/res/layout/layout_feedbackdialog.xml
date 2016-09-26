@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <!--android:padding="@dimen/activity_horizontal_margin"-->
+    <ImageView
+        android:id="@+id/Feedback_ImageBackgrnd"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:src="@drawable/side_nav_bar"
+        app:layout_anchorGravity="top|center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Feedback_userProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+
+
+            android:src="@drawable/ic_avatar" />
+
+        <TextView
+            android:id="@+id/Feedback_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:text="@string/string_reviwed_by_vatsal_thakkar" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stepSize="1.0">
+
+        </RatingBar>
+
+
+        <TextView
+            android:id="@+id/RatingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/Feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:hint="@string/string_what_do_you_think_about_us"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="6" />
+
+        <Button
+            android:id="@+id/btnFeedback_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="5dp"
+            android:text="Submit " />
+
+    </LinearLayout>
+</FrameLayout>
